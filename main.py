@@ -56,10 +56,12 @@ while GAME_ON:
 
             if len(player_one.all_cards) < 5:
                 print("Player One unable to declare war!\nPLAYER TWO WINS!")
+                AT_WAR = False
                 GAME_ON = False
 
             elif len(player_two.all_cards) < 5:
                 print("Player Two unable to declare war!\nPLAYER ONE WINS!")
+                AT_WAR = False
                 GAME_ON = False
 
             else:
