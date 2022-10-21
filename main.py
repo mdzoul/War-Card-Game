@@ -22,11 +22,11 @@ while GAME_ON:
     print(f"Round {ROUND_NUM}")
 
     if len(player_one.all_cards) == 0:
-        print("Player One, out of cards!\nPLAYER TWO WINS!")
+        print("\nPlayer One, out of cards!\nPLAYER TWO WINS!")
         GAME_ON = False
         break
     if len(player_two.all_cards) == 0:
-        print("Player Two, out of cards!\nPLAYER ONE WINS!")
+        print("\nPlayer Two, out of cards!\nPLAYER ONE WINS!")
         GAME_ON = False
         break
 
@@ -55,12 +55,12 @@ while GAME_ON:
             print("WAR!")
 
             if len(player_one.all_cards) < 5:
-                print("Player One unable to declare war!\nPLAYER TWO WINS!")
+                print("\nPlayer One unable to declare war!\nPLAYER TWO WINS!")
                 AT_WAR = False
                 GAME_ON = False
 
             elif len(player_two.all_cards) < 5:
-                print("Player Two unable to declare war!\nPLAYER ONE WINS!")
+                print("\nPlayer Two unable to declare war!\nPLAYER ONE WINS!")
                 AT_WAR = False
                 GAME_ON = False
 
